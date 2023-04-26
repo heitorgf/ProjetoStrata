@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Heitor">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
-<!--     <link rel="stylesheet" href="css/reset.css"> para resetar toda a formatação -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!--     <link rel="stylesheet" href="css/reset.css"> para resetar toda a formatação -->
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
     <link rel="stylesheet" href="css/estilo.css">
 
@@ -22,11 +22,11 @@
         <a href="index.html" class="main-header-link">
             <img src="imagens/avatar.jpg" alt="Texto qualquer">
         </a>
-        <h1> Trabalho de
+        <h1 class="main-header-h1"> Trabalho de Strata,<br> com html e css feito por
             <br>
             <strong>Heitor Guedes Ferreira</strong>, <br>
-            quem fez esse site.
-            Retirado de <a href="http://htmlsup.net">htmlsup.net</a>.
+            quem fez esse site.<br>
+            Retirado de <a href="http://htmlsup.net" class="main-header-secondlink">htmlsup.net</a>.
         </h1>
     </header>
     <main class="main-content">
@@ -127,8 +127,15 @@
                 this is <sub>subscript</sub> text. This is <u>underlined</u> and this is <code>code: for (;;)
                  { ... }</code>. Finally, this is a <a href="#">link</a>.
             </p><!-- Tag <u> ou seja fazer underline é melhor fazer no css com text decoration -->
+
+            <h1>Titulo h1</h1>
+            <h2>Titulo h2</h2>
+            <h3>Titulo h3</h3>
+            <h4>Titulo h4</h4>
+            <h5>Titulo h5</h5>
+            <h6>Titulo h6</h6>
             <blockquote cite="https://developer.mozilla.org">
-                <p>Essa é uma sitação retirada da Mozilla Developer Center</p>
+                Essa é uma sitação retirada da Mozilla Developer Center.
             </blockquote>
             <p>
                 According to Mozilla's website,<q cite="https://www.mozilla.org/en-US/about/history/"> Firefox 1.0 was
@@ -144,23 +151,33 @@
                 <script>
                     alert('oi');
                 </script>  -->
-            <h5>
-                Não ordenada
-            </h5>
-            <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-            </ul>
+                <h4>Listas</h4>
+                <div class="row-lista">  
+                    <div class="col-half">
+                        <h5>
+                            Não ordenada
+                        </h5>
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ul>
+            
+                        <h5>
+                            Ordenada
+                        </h5>
+                        <ol>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ol>
+                    
 
-            <h5>
-                ordenada
-            </h5>
-            <ol>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-                </il>
+
+                    </div>
+                
+                <div class="col-half">
+                
                 <h5>
                     Alternate
                 </h5>
@@ -169,166 +186,172 @@
                     <li>item 2</li>
                     <li>item 3</li>
                 </ul>
+            </div>
+            <h5>Icones</h5>
+            <ul class="ul-icons">
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+
+            </ul>
+                
+                </div>
 
 
-                <h5>Icones</h5>
-                <ul>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-
-                </ul>
-
-                <h5>Ações</h5>
-                <p><a href="#" class="button-default">Default</a>
-                    <a href="#" class="button-default button-default-stroke">Default</a>
-                </p>
-                <p><a href="#" class="button-default button-default-small">Default</a>
-                    <a href="#" class="button-default button-default-small button-default-stroke">Default</a>
-                </p>
-                <p><a href="#" class="button-default button-default-full">Default</a>
-                    <a href="#" class="button-default button-default-full button-default-stroke">Default</a>
-                </p>
-                <p><a href="#" class="button-default button-default-full button-default-small">Default</a>
-                    <a href="#"
-                        class="button-default button-default-full button-default-small button-default-stroke">Default</a>
-                </p>
+           
 
 
 
-                <h4>Table</h4>
-                <h5>Default</h5>
+            <h5>Ações</h5>
+            <p><a href="#" class="button-default">Default</a>
+                <a href="#" class="button-default button-default-stroke">Default</a>
+            </p>
+            <p><a href="#" class="button-default button-default-small">Default</a>
+                <a href="#" class="button-default button-default-small button-default-stroke">Default</a>
+            </p>
+            <p><a href="#" class="button-default button-default-full">Default</a>
+                <a href="#" class="button-default button-default-full button-default-stroke">Default</a>
+            </p>
+            <p><a href="#" class="button-default button-default-full button-default-small">Default</a>
+                <a href="#"
+                    class="button-default button-default-full button-default-small button-default-stroke">Default</a>
+            </p>
 
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Price</th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2"></td>
-                            <td>100.00</td>
-                        </tr>
-                    </tfoot>
-                    <tbody>
-                        <tr>
-                            <td>Item One</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Two</td>
-                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Three</td>
-                            <td> Morbi faucibus arcu accumsan lorem.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Four</td>
-                            <td>Vitae integer tempus condimentum.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Five</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                    </tbody>
 
-                </table>
 
-                <h5>Alternate</h5>
+            <h4>Table</h4>
+            <h5>Default</h5>
 
-                <table class="table-alternate">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Price</th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2"></td>
-                            <td>100.00</td>
-                        </tr>
-                    </tfoot>
-                    <tbody>
-                        <tr>
-                            <td>Item One</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Two</td>
-                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Three</td>
-                            <td> Morbi faucibus arcu accumsan lorem.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Four</td>
-                            <td>Vitae integer tempus condimentum.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Five</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                    </tbody>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>100.00</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Item One</td>
+                        <td>Ante turpis integer aliquet porttitor.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Two</td>
+                        <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Three</td>
+                        <td> Morbi faucibus arcu accumsan lorem.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Four</td>
+                        <td>Vitae integer tempus condimentum.</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Five</td>
+                        <td>Ante turpis integer aliquet porttitor.</td>
+                        <td>29.99</td>
+                    </tr>
+                </tbody>
 
-                </table>
+            </table>
 
-                <h5>Ações</h5>
-                <p><button class="button-default">Default</button>
-                    <button class="button-default button-default-stroke">Default</button>
-                </p>
-                <p><button class="button-default button-default-small">Default</button>
-                    <button class="button-default button-default-small button-default-stroke">Default</button>
-                </p>
-                <p><button class="button-default button-default-full">Default</button>
-                    <button class="button-default button-default-full button-default-stroke">Default</button>
-                </p>
-                <p><button class="button-default button-default-full button-default-small">Default</button>
-                    <button
-                        class="button-default button-default-full button-default-small button-default-stroke">Default</button>
-                    </button>
-                <h5>Formulario</h5>
-                <form>
-                    <label for="name">nome</label>
-                    <input type="text" name="email" id="email">
-                    <input type="email" name="email" id="email">
-                    <select>
-                        <option value="0">Selecione... </option>
-                        <option value="1">HTML </option>
-                        <option value="2">CSS </option>
-                        <option value="3">Javascript </option>
-                    </select>
-                    <label>
-                        <input type="radio" value="baixa" name="prioridade"> Baixa prioridade
-                        <input type="radio" value="media" name="prioridade"> Media prioridade
-                        <input type="radio" value="alta" name="prioridade"> Alta prioridade
-                    </label>
-                    <label>
-                        <input type="checkbox" name="copy" value="1"> Envie uma cópia
-                    </label>
-                    <label>
-                        <input type="checkbox" name="human" value="1"> Sou humano
-                    </label>
-                    <label for="msg">mensagem </label>
-                    <textarea placeholder="Digite uma mensagem" name="msg" id="msg"></textarea>
-                    <input type="submit" class="button-default" value="Enviar">
-                    <input type="reset" class="button-default-stroke" value="Limpar">
-                </form>
+            <h5>Alternate</h5>
+
+            <table class="table-alternate">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>100.00</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Item One</td>
+                        <td>Ante turpis integer aliquet porttitor.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Two</td>
+                        <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Three</td>
+                        <td> Morbi faucibus arcu accumsan lorem.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Four</td>
+                        <td>Vitae integer tempus condimentum.</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Five</td>
+                        <td>Ante turpis integer aliquet porttitor.</td>
+                        <td>29.99</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <h5>Ações</h5>
+            <p><button class="button-default">Default</button>
+                <button class="button-default button-default-stroke">Default</button>
+            </p>
+            <p><button class="button-default button-default-small">Default</button>
+                <button class="button-default button-default-small button-default-stroke">Default</button>
+            </p>
+            <p><button class="button-default button-default-full">Default</button>
+                <button class="button-default button-default-full button-default-stroke">Default</button>
+            </p>
+            <p><button class="button-default button-default-full button-default-small">Default</button>
+                <button
+                    class="button-default button-default-full button-default-small button-default-stroke">Default</button>
+                </button>
+            <h5>Formulario</h5>
+            <form>
+                <label for="name">nome</label>
+                <input type="text" name="email" id="email">
+                <input type="email" name="email" id="email">
+                <select>
+                    <option value="0">Selecione... </option>
+                    <option value="1">HTML </option>
+                    <option value="2">CSS </option>
+                    <option value="3">Javascript </option>
+                </select>
+                <label>
+                    <input type="radio" value="baixa" name="prioridade"> Baixa prioridade
+                    <input type="radio" value="media" name="prioridade"> Media prioridade
+                    <input type="radio" value="alta" name="prioridade"> Alta prioridade
+                </label>
+                <label>
+                    <input type="checkbox" name="copy" value="1"> Envie uma cópia
+                </label>
+                <label>
+                    <input type="checkbox" name="human" value="1"> Sou humano
+                </label>
+                <label for="msg">mensagem </label>
+                <textarea placeholder="Digite uma mensagem" name="msg" id="msg"></textarea>
+                <input type="submit" class="button-default" value="Enviar">
+                <input type="reset" class="button-default-stroke" value="Limpar">
+            </form>
 
         </section>
         <section class="main-content-section">
@@ -350,7 +373,8 @@
 
         </section>
         <h4>Left &amp; Right</h4>
-        <p><img src="imagens/avatar.jpg" alt="homem de costas" class="img-left"> nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum
+        <p><img src="imagens/avatar.jpg" alt="homem de costas" class="img-left"> nisl. Donec accumsan interdum nisi,
+            quis tincidunt felis sagittis eget. tempus euismod. Vestibulum
             ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing
             accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
             Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
@@ -360,7 +384,8 @@
             tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit
             adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.
         </p>
-        <p><img src="imagens/avatar.jpg" alt="homem de costas" class="img-right"> Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum
+        <p><img src="imagens/avatar.jpg" alt="homem de costas" class="img-right"> Fringilla nisl. Donec accumsan
+            interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum
             ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing
             accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
             Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
