@@ -19,7 +19,7 @@
 
 <body>
     <header class="main-header">
-        <a href="index.html" class="main-header-link">
+        <a href="index.html" class="main-header-link imagem-link">
             <img src="imagens/avatar.jpg" alt="Texto qualquer">
         </a>
         <h1 class="main-header-h1"> Trabalho de Strata,<br> com html e css feito por
@@ -41,48 +41,60 @@
             <a href="#" title="Veja mais" class="button-default">Veja mais</a>
         </section>
         <section class="main-content-section">
-            <article class="recent-work-card">
-                <a href="imagens/fulls/01.jpg">
-                    <img src="imagens/thumbs/01.jpg" alt="carro em rua vazia">
-                </a>
-                <p class="recent-work-card-title">Magna sed consequat tempus</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
-            <article class="recent-work-card">
-                <a href="imagens/fulls/02.jpg">
-                    <img src="imagens/thumbs/02.jpg" alt="carro em rua vazia">
-                </a>
-                <p class="recent-work-card-title">Ultricies lacinia interdum</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
-            <article class="recent-work-card">
-                <a href="imagens/fulls/03.jpg">
-                    <img src="imagens/thumbs/03.jpg" alt="carro em rua vazia">
-                </a>
-                <p class="recent-work-card-title">Tortor metus commodo</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
-            <article class="recent-work-card">
-                <a href="imagens/fulls/04.jpg">
-                    <img src="imagens/thumbs/04.jpg" alt="carro em rua vazia">
-                </a>
-                <p class="recent-work-card-title">Quam neque phasellus</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
-            <article class="recent-work-card">
-                <a href="imagens/fulls/05.jpg">
-                    <img src="imagens/thumbs/05.jpg" alt="carro em rua vazia">
-                </a>
-                <p class="recent-work-card-title">Nunc enim commodo aliquet</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
-            <article class="recent-work-card">
-                <a href="imagens/fulls/06.jpg">
-                    <img src="imagens/thumbs/06.jpg" alt="carro em rua vazia">
-                </a>
-                <p class="recent-work-card-title">Risus ornare lacinia</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
+            <h3>Recent Works</h3>
+
+            <div class="row">
+                <div class="col-half">
+
+
+
+                    <article class="recent-work-card">
+                        <a class="imagem-link" href="imagens/fulls/01.jpg">
+                            <img src="imagens/thumbs/01.jpg" alt="carro em rua vazia">
+                        </a>
+                        <p class="recent-work-card-title">Magna sed consequat tempus</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
+                    <article class="recent-work-card">
+                        <a class="imagem-link" href="imagens/fulls/02.jpg">
+                            <img src="imagens/thumbs/02.jpg" alt="carro em rua vazia">
+                        </a>
+                        <p class="recent-work-card-title">Ultricies lacinia interdum</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
+                    <article class="recent-work-card">
+                        <a class="imagem-link" href="imagens/fulls/03.jpg">
+                            <img src="imagens/thumbs/03.jpg" alt="carro em rua vazia">
+                        </a>
+
+                        <p class="recent-work-card-title">Tortor metus commodo</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
+                </div>
+                <div class="col-half">
+                    <article class="recent-work-card">
+                        <a class="imagem-link" href="imagens/fulls/04.jpg">
+                            <img src="imagens/thumbs/04.jpg" alt="carro em rua vazia">
+                        </a>
+                        <p class="recent-work-card-title">Quam neque phasellus</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
+                    <article class="recent-work-card">
+                        <a class="imagem-link" href="imagens/fulls/05.jpg">
+                            <img src="imagens/thumbs/05.jpg" alt="carro em rua vazia">
+                        </a>
+                        <p class="recent-work-card-title">Nunc enim commodo aliquet</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
+                    <article class="recent-work-card">
+                        <a class="imagem-link" href="imagens/fulls/06.jpg">
+                            <img src="imagens/thumbs/06.jpg" alt="carro em rua vazia">
+                        </a>
+                        <p class="recent-work-card-title">Risus ornare lacinia</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
+                </div>
+            </div><!-- row -->
         </section>
         <section class="main-content-section">
             <h3>Get in Touch</h3>
@@ -343,8 +355,7 @@
                     class="button-default button-default-full button-default-small button-default-stroke">Default</button>
                 </button>
             <h5>Formulario</h5>
-            <div class="row">
-                <div class="col-half">
+
             <form>
                 <label for="name">Nome</label>
                 <input type="text" name="nome" id="nome">

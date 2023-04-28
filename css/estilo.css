@@ -4,7 +4,9 @@ body {
     font-weight: normal;
     line-height: 2;
 }
-
+img{
+    max-width: 100%;
+}
 a {
     transition: color .4 linear, border .4 linear;
     text-decoration: none;
@@ -50,7 +52,7 @@ h4 {
 
 h5 {
     font-size: 18px;
- 
+
 }
 
 h6 {
@@ -81,12 +83,15 @@ code {
 pre code {
     display: block;
 }
-ul, ol{
+
+ul,
+ol {
     margin: 0;
     padding: 0;
     padding-left: 1.1em;
 }
-li{
+
+li {
     padding-left: .5em;
 }
 
@@ -136,82 +141,111 @@ para colocar o display block no lugar certo é nescessario usar o pre */
     padding: 72px 36px;
     box-sizing: border-box;
 }
-.alternate{
+
+.alternate {
     list-style-type: none;
     padding-left: 0;
-    
-    }
-    .alternate li{
-        border-bottom: 2px solid rgb(224, 217, 217);
-        padding-left: 0;
-    }
-    .alternate li:last-child{
-    border: 0;
-    }
-    /* Essa pseudo classe serve para mudar coisas pontuais na ultima linha */
-.ul-icons{
-    list-style-type: none;
-    padding-left: 0;
-    
+
 }
-.ul-icons li{
+
+.alternate li {
+    border-bottom: 2px solid rgb(224, 217, 217);
+    padding-left: 0;
+}
+
+.alternate li:last-child {
+    border: 0;
+}
+
+/* Essa pseudo classe serve para mudar coisas pontuais na ultima linha */
+.ul-icons {
+    list-style-type: none;
+    padding-left: 0;
+
+}
+
+.ul-icons li {
     display: inline-block;
     font-size: 22px;
     color: #49bf9d;
     /* Para eles terrrem comportamento de linha e ficarem como blocos */
 }
+.main-header-link img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.recent-work-card img{
+border-radius: 10px;
+overflow: hidden;
+} 
 /* Grid */
-.row{
+.row {
     overflow: auto;
 }
 
-.col-half{
+.col-half {
     width: 49%;
     float: left;
-  
+
 }
-.col-half:first-child{
+
+.col-half:first-child {
     margin-right: 1%;
 }
 
-.col-half:last-child{
+.col-half:last-child {
     margin-left: 1%;
 }
-.col-two-thirds{
-   width: 65%;
-   float: left;
-   
+
+.col-two-thirds {
+    width: 65%;
+    float: left;
+
 }
-.col-one-third{
+
+.col-one-third {
     width: 32%;
     float: left;
-    
+
     margin-left: 2%;
 }
-textarea{
+
+textarea {
     height: 10em;
 }
-input, label, textarea, select{
+
+input,
+label,
+textarea,
+select {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
 }
-input, textarea, select{
+
+input,
+textarea,
+select {
     background-color: #cccc;
     padding: 15px;
     border-radius: 5px;
     border: 2px solid transparent;
     margin-bottom: 15px;
-   
+
 }
-input:focus, textarea:focus{
+
+input:focus,
+textarea:focus {
     border: 2px solid #49bf9d;
     outline: none;
 }
-input[type="radio"], input[type="checkbox"]{
+
+input[type="radio"],
+input[type="checkbox"] {
     width: auto;
 }
-.button-default{
+
+.button-default {
     background-color: #49bf9d;
     color: white;
     border: 2px solid #49bf9d;
@@ -221,51 +255,71 @@ input[type="radio"], input[type="checkbox"]{
     display: inline-block;
     width: auto;
 }
-.button-default-big{
+
+.button-default-big {
     font-size: 1em;
 }
-.button-default-stroke{
-    background-color:white;
+
+.button-default-stroke {
+    background-color: white;
     border-color: #efefef;
     color: inherit;
 
 }
-.button-default-small{
+.imagem-link{
+    border: 0;
+}
+
+
+
+.button-default-small {
     font-size: .6em;
 }
-.button-default-full{
+
+.button-default-full {
     width: 100%;
     display: block;
     text-align: center;
 }
-.table{
+
+.table {
     width: 100%;
     margin: 0 0 2em 0;
     border-collapse: collapse;
     text-align: left;
 }
+
 /* border-collapse server para tirar o espacinho entre as colunas */
-table td{
+table td {
     padding: .75em;
 }
-.table th{
+
+.table th {
     background: #cccc;
     padding: .75em;
 }
-.table tbody tr td{
-border-bottom: 2px solid #a4a3a3;
+
+.table tbody tr td {
+    border-bottom: 2px solid #a4a3a3;
 }
+
 /* de dentro da classe table peguei a tbody a primeira tr e as td que estão la dentro*/
-.table tbody tr:first-child td{
-border-top: 2px solid #666;
+.table tbody tr:first-child td {
+    border-top: 2px solid #666;
 }
-.table tbody tr:last-child td{
+
+.table tbody tr:last-child td {
     border-bottom: 2px solid #666;
-    }
-    .table tbody tr:nth-child(even) td{background-color: #eee;}
-.table-alternate tbody td{
-border: 1px solid #dddd;
 }
-.table-alternate tbody tr:first-child td{
+
+.table tbody tr:nth-child(even) td {
+    background-color: #eee;
+}
+
+.table-alternate tbody td {
+    border: 1px solid #dddd;
+}
+
+.table-alternate tbody tr:first-child td {
     border-top: 2px solid white;
-    }
+}
