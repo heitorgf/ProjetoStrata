@@ -191,12 +191,12 @@ para colocar o display block no lugar certo é nescessario usar o pre */
 textarea{
     height: 10em;
 }
-input, label, textarea{
+input, label, textarea, select{
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
 }
-input, textarea{
+input, textarea, select{
     background-color: #cccc;
     padding: 15px;
     border-radius: 5px;
@@ -208,6 +208,9 @@ input:focus, textarea:focus{
     border: 2px solid #49bf9d;
     outline: none;
 }
+input[type="radio"], input[type="checkbox"]{
+    width: auto;
+}
 .button-default{
     background-color: #49bf9d;
     color: white;
@@ -217,6 +220,9 @@ input:focus, textarea:focus{
     font-size: .8em;
     display: inline-block;
     width: auto;
+}
+.button-default-big{
+    font-size: 1em;
 }
 .button-default-stroke{
     background-color:white;
