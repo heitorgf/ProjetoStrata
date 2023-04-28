@@ -160,14 +160,53 @@ para colocar o display block no lugar certo é nescessario usar o pre */
     color: #49bf9d;
     /* Para eles terrrem comportamento de linha e ficarem como blocos */
 }
+/* Grid */
 .row{
     overflow: auto;
 }
 
 .col-half{
-    width: 50%;
+    width: 49%;
     float: left;
   
+}
+.col-half:first-child{
+    margin-right: 1%;
+}
+
+.col-half:last-child{
+    margin-left: 1%;
+}
+.col-two-thirds{
+   width: 65%;
+   float: left;
+   
+}
+.col-one-third{
+    width: 32%;
+    float: left;
+    
+    margin-left: 2%;
+}
+textarea{
+    height: 10em;
+}
+input, label, textarea{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+input, textarea{
+    background-color: #cccc;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    margin-bottom: 15px;
+   
+}
+input:focus, textarea:focus{
+    border: 2px solid #49bf9d;
+    outline: none;
 }
 .button-default{
     background-color: #49bf9d;
@@ -177,6 +216,7 @@ para colocar o display block no lugar certo é nescessario usar o pre */
     border-radius: 5px;
     font-size: .8em;
     display: inline-block;
+    width: auto;
 }
 .button-default-stroke{
     background-color:white;
