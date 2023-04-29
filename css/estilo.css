@@ -178,6 +178,19 @@ para colocar o display block no lugar certo é nescessario usar o pre */
 border-radius: 10px;
 overflow: hidden;
 } 
+
+
+.galeria-img img{
+    width: 100%;
+    /* margin: 0 0 2%; */
+  
+}
+
+.galeria-thumb img, .galeria-img img{
+    margin-bottom: 2%;
+    display: inline-block;
+    border-radius: 5px;
+}
 /* Grid */
 .row {
     overflow: auto;
@@ -207,9 +220,19 @@ overflow: hidden;
     width: 32%;
     float: left;
 
-    margin-left: 2%;
+    /* margin-left: 2%; */
 }
-
+/* método 1
+.col-one-third:nth-child(2), .col-one-third:nth-child(5), .col-one-third:nth-child(8){
+    margin: 0 2%;
+} */
+/* Método 2 
+é uma formula matematica 1n 2n e 3n são os multiplos de 1 2 e 3. foi multiplicado por 3 e subitraido por 1*/
+.col-one-third:nth-child(3n-1){
+    margin: 0 2%; 
+   
+}
+/* Método 2 */
 textarea {
     height: 10em;
 }
@@ -322,4 +345,10 @@ table td {
 
 .table-alternate tbody tr:first-child td {
     border-top: 2px solid white;
+}
+.img-left{
+    float: left;
+}
+.img-right{
+    float: right;
 }
