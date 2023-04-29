@@ -211,7 +211,7 @@ overflow: hidden;
 }
 
 .col-two-thirds {
-    width: 65%;
+    width: 66%;
     float: left;
 
 }
@@ -222,17 +222,34 @@ overflow: hidden;
 
     /* margin-left: 2%; */
 }
+.col-two-thirds + .col-one-third{
+    /* Esse ele mento vai pegar o primeiro col-one-third que aparecer logo após o col-two-thirds */
+    margin-left: 2%; 
+}
+.col-one-third  + .col-two-thirds {
+    /* Esse ele mento vai pegar o primeiro col-one-third que aparecer logo após o col-two-thirds */
+    margin-left: 2%; 
+}
+
 /* método 1
 .col-one-third:nth-child(2), .col-one-third:nth-child(5), .col-one-third:nth-child(8){
     margin: 0 2%;
 } */
 /* Método 2 
 é uma formula matematica 1n 2n e 3n são os multiplos de 1 2 e 3. foi multiplicado por 3 e subitraido por 1*/
-.col-one-third:nth-child(3n-1){
+/* .col-one-third:nth-child(3n-1){
     margin: 0 2%; 
    
-}
-/* Método 2 */
+} */
+/* Método 3 */
+.col-one-third:nth-child(3n-2){/* 1, 4, 7 */
+    margin-right: 2%; 
+   
+} 
+.col-one-third:nth-child(3n){/* 3, 6, 9 */
+    margin-left: 2%; 
+   
+} 
 textarea {
     height: 10em;
 }
@@ -277,8 +294,13 @@ input[type="checkbox"] {
     font-size: .8em;
     display: inline-block;
     width: auto;
+    transition: all .4;
+    cursor: pointer;
 }
-
+.button-default:hover{
+    background-color: #54edbf;
+    border: transparent;
+}
 .button-default-big {
     font-size: 1em;
 }
@@ -287,8 +309,14 @@ input[type="checkbox"] {
     background-color: white;
     border-color: #efefef;
     color: inherit;
+    
 
 }
+.button-default-stroke:hover{
+    color: #49bf9d;
+    border-color: #49bf9d;
+    background-color: white;
+} 
 .imagem-link{
     border: 0;
 }
@@ -348,7 +376,13 @@ table td {
 }
 .img-left{
     float: left;
+    margin: 2%;
 }
 .img-right{
     float: right;
+    margin: 2%;
+}
+.main-content-section-text{
+    padding-top: 10px;
+    display: inline-block;
 }
