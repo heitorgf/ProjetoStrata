@@ -295,12 +295,13 @@ input[type="checkbox"] {
     font-size: .8em;
     display: inline-block;
     width: auto;
-    transition: all .4;
+    transition: 0.4;
     cursor: pointer;
 }
 .button-default:hover{
     background-color: #54edbf;
     border: transparent;
+    border: 2px solid ;
 }
 .button-default-big {
     font-size: 1em;
@@ -315,7 +316,7 @@ input[type="checkbox"] {
 }
 .button-default-stroke:hover{
     color: #49bf9d;
-    border-color: #49bf9d;
+    border-color: white;
     background-color: white;
 } 
 .imagem-link{
